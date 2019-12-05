@@ -1,0 +1,140 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+.truncate {
+    /* Required declarations: */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /* Limit the text block to x lines */
+    -webkit-line-clamp: 5;
+}
+
+.row-style {
+    margin-top: 50px;
+}
+.panel-article {
+    box-shadow: 0 2px 6px #ccc;
+    border-radius: 0 !important;
+    background-color: #dce5ef;
+}
+
+.article-panel-footer {
+    display: flex;
+    background-color: #486484;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+    .article-panel-footer.around {
+        justify-content: space-around;
+    }
+.article-heading {
+    background-color: #486484 !important;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: 0 2px 6px #f2f2f2;
+}
+
+.article-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #48dbfb;
+}
+
+.article-content-title {
+    font-weight: bold;
+    color: #3c3c3c;
+}
+
+.article-content-wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+    .article-content-wrapper * {
+        font-size: 13px !important;
+    }
+
+.article-meta {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+    .article-meta:hover {
+        background-color: lightblue;
+    }
+
+    .article-meta > * {
+        display: block;
+    }
+
+
+.navbar {
+    background-color: #222f3e;
+    border: none;
+    box-shadow: 0 6px 12px #dadada;
+}
+.fontlogo {
+    font-family: 'Rock Salt', cursive;
+    font-size: 20px;
+    color: #48dbfb;
+}
+.footer-position {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #48dbfb;
+    background-color: #222f3e;
+    text-align: center;
+}
+.navbar a {
+    color: #48dbfb;
+}
+.nav.navbar-nav li a:hover {
+    background-color: #3f5873;
+    color: ghostwhite;
+    font-weight: bold;
+}
+    .navbar a:hover {
+        color: #54a0ff;
+        background-color: black;
+    }

@@ -1,0 +1,26 @@
+﻿@model Laborator4.Models.Article
+@{
+    ViewBag.Title = "Show";
+}
+<h1>Afisare articol</h1>
+<div class="panel panel-default">
+    @Html.Partial("ArticleInfo", Model)
+    @if (ViewBag.afisareButoane == true && Model.UserId == ViewBag.utilizatorCurent
+    || ViewBag.esteAdmin)
+    {
+        <div class="panel-footer article-panel-footer">
+            <a class="btn btn-primary" href="/Article/Edit/@Model.Id">Modifica articol</a>
+
+            @if (ViewBag.afisareButoane == true && Model.UserId == ViewBag.utilizatorCurent
+            || ViewBag.esteAdmin)
+            {
+                using (Html.BeginForm(actionName: "Delete", controllerName: "Article",
+               method: FormMethod.Post, routeValues: new { id = @Model.Id }))
+                {
+                    @Html.HttpMethodOverride(HttpVerbs.Delete)
+                    <button class="btn btn-danger" type="submit">Sterge articol</button>
+                }
+            }
+        </div>
+    }
+</div>
